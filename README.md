@@ -1,7 +1,9 @@
 # CMPT362-StressMeter
 https://github.com/user-attachments/assets/e19a3ab6-8f78-4830-93f2-21903585c46b
 ## Overview
-The Stress Meter is a mobile application designed to help users track and visualize their stress levels over time. Users can select images that best represent their current stress level, with the app recording and displaying this data through an intuitive interface and graphical visualization. For now as the scope of the class, it only assigns to random value when pressing the image.
+The Stress Meter is a mobile application designed to help users track and visualize their stress levels over time. Users can select images that best represent their current stress level, with the app recording and displaying this data through an intuitive interface and graphical visualization.
+
+For now as the scope of the class, it only assigns to random value when pressing the image.
 ## Features
 - Visual stress level selection through a grid of expressive images
 - Real-time stress level recording with timestamp
