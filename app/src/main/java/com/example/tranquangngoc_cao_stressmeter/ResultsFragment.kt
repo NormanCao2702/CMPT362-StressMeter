@@ -17,6 +17,9 @@ import com.github.mikephil.charting.data.Entry
 import com.github.mikephil.charting.data.LineData
 import com.github.mikephil.charting.data.LineDataSet
 import com.github.mikephil.charting.formatter.IndexAxisValueFormatter
+import java.text.SimpleDateFormat
+import java.util.Date
+import java.util.Locale
 
 class ResultsFragment : Fragment() {
 
@@ -97,7 +100,9 @@ class ResultsFragment : Fragment() {
     }
 
     private fun formatTimestamp(timestamp: Long): String {
-        return timestamp.toString()
+        val date = Date(timestamp * 1000L) // Convert seconds to milliseconds
+        val sdf = SimpleDateFormat("MM/dd/yyyy HH:mm:ss", Locale.getDefault())
+        return sdf.format(date)
     }
 
     private fun createTextView(text: String, isHeader: Boolean = false): TextView {
